@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevUps - Developers-As-A-Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">{ }</span>
+                    <span class="logo-text">DevUps</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#how-it-works">Cómo Funciona</a></li>
+                    <li><a href="#benefits">Beneficios</a></li>
+                    <li><a href="#pricing">Precios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+                <button class="btn btn-primary">Comenzar</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Developers-As-A-Service
+                    </h1>
+                    <p class="hero-subtitle">
+                        Accede a desarrolladores de élite cuando los necesites.
+                        Sin contratos largos, sin complicaciones. Solo talento de clase mundial.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary btn-large">Encuentra tu Desarrollador</button>
+                        <button class="btn btn-secondary btn-large">Ver Demo</button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Desarrolladores</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">1000+</span>
+                            <span class="stat-label">Proyectos Completados</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-window">
+                        <div class="code-header">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="code-keyword">const</span> <span class="code-variable">solution</span> = <span class="code-function">await</span> <span class="code-function">DevUps</span>.<span class="code-method">find</span>({
+  <span class="code-property">skills</span>: [<span class="code-string">'React'</span>, <span class="code-string">'Node.js'</span>, <span class="code-string">'AWS'</span>],
+  <span class="code-property">experience</span>: <span class="code-string">'senior'</span>,
+  <span class="code-property">availability</span>: <span class="code-string">'immediate'</span>
+});
+
+<span class="code-comment">// Get matched with perfect developers</span>
+<span class="code-keyword">return</span> solution.<span class="code-method">deploy</span>();</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Soluciones completas para todas tus necesidades de desarrollo</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Desarrollo Full-Stack</h3>
+                    <p>Desarrolladores expertos en frontend, backend y bases de datos para construir aplicaciones completas.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Desarrollo Mobile</h3>
+                    <p>Aplicaciones nativas y cross-platform para iOS y Android con las últimas tecnologías.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>Infraestructura en la nube, CI/CD, y automatización para escalar tus aplicaciones.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Diseñadores que crean interfaces intuitivas y experiencias de usuario excepcionales.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Integración de inteligencia artificial y modelos de ML en tus productos.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Seguridad & Testing</h3>
+                    <p>Auditorías de seguridad, testing automatizado y garantía de calidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cómo Funciona</h2>
+                <p class="section-subtitle">Tres simples pasos para comenzar</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Cuéntanos tu Proyecto</h3>
+                    <p>Describe tus necesidades, stack tecnológico y cronograma. Nuestro sistema encuentra el match perfecto.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Conoce tu Equipo</h3>
+                    <p>Te presentamos desarrolladores verificados con las habilidades exactas que necesitas.</p>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Comienza a Desarrollar</h3>
+                    <p>Tu equipo comienza inmediatamente. Tú controlas el ritmo y la dirección del proyecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por Qué Elegirnos</h2>
+                <p class="section-subtitle">La diferencia DevUps</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">✓</div>
+                    <h3>Talento Pre-Verificado</h3>
+                    <p>Todos nuestros desarrolladores pasan por un riguroso proceso de selección técnica y cultural.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✓</div>
+                    <h3>Flexibilidad Total</h3>
+                    <p>Escala tu equipo hacia arriba o abajo según las necesidades de tu proyecto.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✓</div>
+                    <h3>Inicio Rápido</h3>
+                    <p>Comienza a trabajar en 48 horas o menos. Sin largos procesos de contratación.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✓</div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Nuestro equipo está siempre disponible para resolver cualquier problema o duda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Planes Transparentes</h2>
+                <p class="section-subtitle">Elige el plan que se ajuste a tus necesidades</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">45</span>
+                            <span class="period">/hora</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Desarrolladores Junior</li>
+                        <li>✓ Ideal para proyectos pequeños</li>
+                        <li>✓ Soporte por email</li>
+                        <li>✓ Herramientas básicas</li>
+                    </ul>
+                    <button class="btn btn-outline">Comenzar</button>
+                </div>
+                <div class="pricing-card pricing-card-featured">
+                    <div class="featured-badge">Más Popular</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">75</span>
+                            <span class="period">/hora</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Desarrolladores Senior</li>
+                        <li>✓ Proyectos medianos/grandes</li>
+                        <li>✓ Soporte prioritario</li>
+                        <li>✓ Todas las herramientas</li>
+                        <li>✓ Project Manager dedicado</li>
+                    </ul>
+                    <button class="btn btn-primary">Comenzar</button>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">120</span>
+                            <span class="period">/hora</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✓ Tech Leads & Arquitectos</li>
+                        <li>✓ Proyectos empresariales</li>
+                        <li>✓ Soporte 24/7</li>
+                        <li>✓ Infraestructura dedicada</li>
+                        <li>✓ SLA garantizado</li>
+                        <li>✓ Consultoría estratégica</li>
+                    </ul>
+                    <button class="btn btn-outline">Contactar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para Acelerar tu Desarrollo?</h2>
+                <p>Únete a cientos de empresas que confían en DevUps para sus proyectos</p>
+                <button class="btn btn-primary btn-large">Comenzar Ahora</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">{ }</span>
+                        <span class="logo-text">DevUps</span>
+                    </div>
+                    <p>Conectando empresas con el mejor talento de desarrollo del mundo.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">GitHub</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Desarrollo Web</a></li>
+                        <li><a href="#">Desarrollo Mobile</a></li>
+                        <li><a href="#">Cloud & DevOps</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Compañía</h4>
+                    <ul>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Email: hello@devups.io</li>
+                        <li>Tel: +1 (555) 123-4567</li>
+                        <li>San Francisco, CA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DevUps. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
