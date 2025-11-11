@@ -1,0 +1,13 @@
+{
+  "name": "devups-website",
+  "version": "1.0.0",
+  "description": "DevUps - Developers-As-A-Service Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["devups", "developers", "website"],
+  "author": "",
+  "license": "MIT"
+}
